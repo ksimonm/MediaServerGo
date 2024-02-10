@@ -1,0 +1,38 @@
+{
+	"env": "development",
+	"port": 8080,
+	"url": "http://localhost:8080",
+	"tmpDir": "./tmp/mediaServerTmp",
+	"buckets": [
+		{
+			"name": "artefact",
+			"accessKeyId": "minioadmin",
+			"secretAccessKey": "minioadmin",
+			"presets": [
+				{
+					"name": "preview",
+					"b": 2000,
+					"q": 90
+				},
+				{
+					"name": "middle",
+					"w": 600,
+					"q": 75
+				}
+			]
+		}
+	],
+	"allowedFormats": [
+		"jpg",
+		"jpeg",
+		"png"
+	],
+	"cache": {
+		"cacheRoot": "./tmp/mediaServerGoCache",
+		"maxSizeInMB": 100
+	},
+	"storage": {
+		"type": "local",
+		"storageRoot": "./tmp/localStorageGo"
+	}
+}

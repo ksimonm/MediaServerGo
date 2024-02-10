@@ -1,0 +1,9 @@
+# Node artifact files
+node_modules/
+# JetBrains IDE
+.idea/
+server
+config/
+tmp/
+
+
